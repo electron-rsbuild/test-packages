@@ -1,0 +1,33 @@
+{
+  "name": "@electron-rsbuild/test-package-1",
+  "version": "0.0.2",
+  "description": "Electron main config plugin for Electron-Rsbuild",
+  "author": "veaba<godpu@oulook.com>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rslib build --watch",
+    "start": "rslib build --watch",
+    "build": "rslib build",
+    "clear":"rimraf dist"
+  },
+  "dependencies": {
+    "@rslib/core": "^0.0.16"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "test-packages-monorepo",
+  "private": true,
+  "author": "veaba<godpu@oulook.com>",
+  "scripts": {
+    "build": "nx build @electron-rsbuild/test-package-1",
+    "clear": "nx run-many -t clear",
+    "dev:tests": "pnpm --filter=@electron-rsbuild/test-* run dev",
+    "build:core": "pnpm --filter=core run build",
+    "changeset": "changeset",
+    "lint": "biome check . --diagnostic-level=warn",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veaba/electron-rsbuild.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veaba/electron-rsbuild/issues"
+  },
+  "homepage": "https://github.com/veaba/electron-rsbuild#readme",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "^2.27.9",
+    "nx": "^20.0.12",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "packageManager": "pnpm@9.11.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
