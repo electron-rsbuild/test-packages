@@ -7,7 +7,7 @@
     "clear": "nx run-many -t clear",
     "dev:tests": "pnpm --filter=@electron-rsbuild/test-* run dev",
     "build:core": "pnpm --filter=core run build",
-    "changeset": "changeset --access=public",
+    "changeset": "changeset",
     "lint": "biome check . --diagnostic-level=warn",
     "format": "prettier --write ."
   },
