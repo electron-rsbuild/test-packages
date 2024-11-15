@@ -1,6 +1,6 @@
 {
   "name": "@electron-rsbuild/test-package-1",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Electron main config plugin for Electron-Rsbuild",
   "author": "veaba<godpu@oulook.com>",
   "type": "module",
@@ -21,7 +21,7 @@
     "dev": "rslib build --watch",
     "start": "rslib build --watch",
     "build": "rslib build",
-    "clear":"rimraf dist"
+    "clear": "rimraf dist"
   },
   "dependencies": {
     "@rslib/core": "^0.0.16"
