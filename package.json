@@ -3,8 +3,9 @@
   "private": true,
   "author": "veaba<godpu@oulook.com>",
   "scripts": {
-    "build": "nx build @electron-rsbuild/test-package-1",
+    "build": "nx run-many -t build ",
     "clear": "nx run-many -t clear",
+    "prepare": "pnpm run build",
     "dev:tests": "pnpm --filter=@electron-rsbuild/test-* run dev",
     "build:core": "pnpm --filter=core run build",
     "changeset": "changeset",
