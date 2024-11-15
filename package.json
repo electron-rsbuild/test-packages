@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/veaba/electron-rsbuild.git"
+    "url": "git+https://github.com/electron-rsbuild/test-packages.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/veaba/electron-rsbuild/issues"
+    "url": "https://github.com/electron-rsbuild/test-packages/issues"
   },
-  "homepage": "https://github.com/veaba/electron-rsbuild#readme",
+  "homepage": "https://github.com/electron-rsbuild/test-packages#readme",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@changesets/cli": "^2.27.9",

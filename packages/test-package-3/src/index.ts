@@ -5,7 +5,8 @@ export function preloadPlugin() {
   return [
     {
       name: 'electron-rsbuild:preload',
-      setup(api:any) {
+      setup() {
+        console.log('test 3');
       },
     },
   ];

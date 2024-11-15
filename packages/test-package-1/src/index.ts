@@ -5,7 +5,8 @@ export function mainPlugin() {
   return [
     {
       name: 'electron-rsbuild:main',
-      setup(api:any) {
+      setup() {
+        console.log('test 1');
       },
     },
   ];

@@ -6,9 +6,8 @@ export function rendererPlugin() {
     {
       name: 'electron-rsbuild:renderer',
 
-      setup(api:any) {
-        api.modifyRsbuildConfig((config: any, { mergeRsbuildConfig }) => {
-        });
+      setup() {
+        console.log('test 2');
       },
     },
   ];
